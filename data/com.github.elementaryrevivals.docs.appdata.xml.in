@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2018 Matt Harris <matth281@outlook.com> -->
 <component type="desktop">
-  <id>com.github.mdh34.quickdocs</id>
+  <id>com.github.elementaryrevivals.docs</id>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-3.0+</project_license>
-  <name>quickDocs</name>
+  <name>Docs</name>
   <summary>Quickly Read Developer Docs</summary>
   <description>
     <p>A fast developer docs reader that supports Valadoc and DevDocs</p>
@@ -15,11 +15,11 @@
     </ul>
   </description>
   <provides>
-    <binary>com.github.mdh34.quickdocs</binary>
+    <binary>com.github.elementaryrevivals.docs</binary>
   </provides>
   <developer_name>Matt Harris</developer_name>
-  <url type="homepage">https://github.com/mdh34/quickDocs</url>
-  <url type="bugtracker">https://github.com/mdh34/quickDocs/issues</url>
+  <url type="homepage">https://github.com/elementaryrevivals/docs</url>
+  <url type="bugtracker">https://github.com/elementaryrevivals/docs/issues</url>
   <releases>
     <release version="2.2.6" date="2019-05-28">
         <description>
@@ -153,14 +153,14 @@
     <release version="1.1.6" date="2018-02-28">
       <description>
         <ul>
-          <li>quickDocs now restores the last page you were on</li>
+          <li>Docs now restores the last page you were on</li>
         </ul>
       </description>
     </release>
     <release version="1.1.5" date="2018-02-02">
       <description>
         <ul>
-          <li>quickDocs now remembers its last size and location!</li>
+          <li>Docs now remembers its last size and location!</li>
         </ul>
       </description>
     </release>
@@ -190,7 +190,7 @@
         <p>1.1.0</p>
         <ul>
           <li>New dark mode support!</li>
-          <li>quickDocs remembers which tab you were last using</li>
+          <li>Docs remembers which tab you were last using</li>
         </ul>
       </description>
     </release>
@@ -208,16 +208,16 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/mdh34/quickDocs/master/data/images/screenshot-1.png</image>
+      <image>https://raw.githubusercontent.com/elementaryrevivals/docs/master/data/images/screenshot-1.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/mdh34/quickDocs/master/data/images/screenshot-2.png</image>
+      <image>https://raw.githubusercontent.com/elementaryrevivals/docs/master/data/images/screenshot-2.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/mdh34/quickDocs/master/data/images/screenshot-3.png</image>
+      <image>https://raw.githubusercontent.com/elementaryrevivals/docs/master/data/images/screenshot-3.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/mdh34/quickDocs/master/data/images/screenshot-4.png</image>
+      <image>https://raw.githubusercontent.com/elementaryrevivals/docs/master/data/images/screenshot-4.png</image>
     </screenshot>
   </screenshots>
   <custom>

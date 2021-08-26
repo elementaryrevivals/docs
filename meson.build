@@ -1,4 +1,4 @@
-project('com.github.mdh34.quickdocs', 'vala', 'c')
+project('com.github.elementaryrevivals.docs', 'vala', 'c')
 
 i18n = import('i18n')
 

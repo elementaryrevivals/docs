@@ -41,8 +41,8 @@ public class View : WebKit.WebView {
     }
 
     public void set_cookies () {
-        string path = Path.build_filename (Environment.get_user_config_dir (), "com.github.mdh34.quickdocs", "cookies");
-        string folder = Path.build_filename (Environment.get_user_config_dir (), "com.github.mdh34.quickdocs");
+        string path = Path.build_filename (Environment.get_user_config_dir (), "com.github.elementaryrevivals.docs", "cookies");
+        string folder = Path.build_filename (Environment.get_user_config_dir (), "com.github.elementaryrevivals.docs");
 
         if (!GLib.FileUtils.test (folder, GLib.FileTest.IS_DIR)) {
             var file = File.new_for_path (folder);

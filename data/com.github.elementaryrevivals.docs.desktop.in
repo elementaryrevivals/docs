@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Docs
+GenericName=Docs
+Comment=A fast developer docs reader that supports Valadoc and DevDocs
+Categories=Development;Documentation;
+Exec=com.github.elementaryrevivals.docs
+Icon=com.github.elementaryrevivals.docs
+Terminal=false
+Type=Application
+X-GNOME-Gettext-Domain=com.github.elementaryrevivals.docs
+Keywords=docs;Docs;dev;
