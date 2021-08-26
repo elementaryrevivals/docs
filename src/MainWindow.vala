@@ -211,9 +211,9 @@ public class MainWindow : Gtk.Window {
     }
 
     private Gtk.SearchBar create_search_bar () {
-        var search_entry = new Gtk.SearchEntry();
-        search_entry.placeholder_text = _("Find in page...");
-        search_entry.set_width_chars(60);
+        var search_entry = new Gtk.SearchEntry ();
+        search_entry.placeholder_text = _("Find in page…");
+        search_entry.set_width_chars (60);
 
         search_entry.search_changed.connect (() => {
             var v = get_current_view ();
@@ -228,7 +228,7 @@ public class MainWindow : Gtk.Window {
                 v.search_next ();
             }
         });
-        search_entry.show();
+        search_entry.show ();
 
         var next_search = new Gtk.Button.from_icon_name ("go-down-symbolic", Gtk.IconSize.MENU);
         next_search.clicked.connect (() => {
@@ -238,7 +238,7 @@ public class MainWindow : Gtk.Window {
             }
         });
 
-        next_search.show();
+        next_search.show ();
 
         var previous_search = new Gtk.Button.from_icon_name ("go-up-symbolic", Gtk.IconSize.MENU);
         previous_search.clicked.connect (() => {
@@ -247,17 +247,17 @@ public class MainWindow : Gtk.Window {
                 v.search_previous ();
             }
         });
-        previous_search.show();
+        previous_search.show ();
 
-        var hbox = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
+        var hbox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 5);
         hbox.pack_start (search_entry, false, false, 0);
         hbox.pack_start (previous_search, false, false, 0);
         hbox.pack_start (next_search, false, false, 0);
-        hbox.show();
+        hbox.show ();
 
-        var search_bar = new Gtk.SearchBar();
-        search_bar.connect_entry(search_entry);
-        search_bar.add(hbox);
+        var search_bar = new Gtk.SearchBar ();
+        search_bar.connect_entry (search_entry);
+        search_bar.add (hbox);
 
         return search_bar;
     }

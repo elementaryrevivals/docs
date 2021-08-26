@@ -95,7 +95,7 @@ private bool compare_lists (Gee.ArrayList<string> a, Gee.ArrayList<string> b ) {
     var array_one = a.to_array ();
     var array_two = b.to_array ();
     if (array_one.length != array_two.length) return false;
-    for (int i=0; i< array_one.length; i++) {
+    for (int i=0; i < array_one.length; i++) {
         if (array_one[i] != array_two[i]) {
             return false;
         }
