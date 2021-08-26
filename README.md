@@ -1,7 +1,6 @@
 
-# Docs ![Icon](https://github.com/elementaryrevivals/docs/raw/master/data/icons/64/com.github.elementaryrevivals.docs.svg)
-
-[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.elementaryrevivals.docs)
+# Docs
+<!-- ![Icon](https://github.com/elementaryrevivals/docs/raw/master/data/icons/64/com.github.elementaryrevivals.docs.svg) -->
 
 A fast developer docs reader
 ![Screenshot](https://raw.githubusercontent.com/elementaryrevivals/docs/master/data/images/screenshot-1.png)
@@ -21,12 +20,16 @@ A fast developer docs reader
  - meson
  - valac
 
-## Install:
-### Flatpak:
- Docs is avaliable on Flathub, install it by running:
- ```
- flatpak install flathub com.github.elementaryrevivals.docs
- ```
+# Installing
+
+<!-- <a href="https://appcenter.elementary.io/com.github.elementaryrevivals.docs"><img src="https://appcenter.elementary.io/badge.svg" height="75" /></a> -->
+<!-- <a href="https://flathub.org/apps/details/com.github.elementaryrevivals.docs"><img src="https://flathub.org/assets/badges/flathub-badge-en.svg" height="75" /></a> -->
+
+Releases are also always available as flatpaks on the [releases page](https://github.com/elementaryrevivals/docs/releases).
+
+## Nightly builds
+
+Nightly builds are handled by GitHub actions and the latest one can be found on [nightly.link](https://nightly.link/elementaryrevivals/docs/workflows/ci/main/docs.zip)
 
 ## Install From Source:
 The following instructions should work on most debian-based systems:
