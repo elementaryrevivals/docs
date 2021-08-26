@@ -29,6 +29,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: sudo apt install libarchive-dev libdevhelp-dev libgee-0.8-dev libgranite-dev libgtk-3-dev libwebkit2gtk-4.0-dev meson valac -y
+
       - name: Build
         uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v3
         with:
