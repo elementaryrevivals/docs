@@ -3,11 +3,6 @@
   <schema path="/com/github/watsonprojects/docs/"
   id="com.github.watsonprojects.docs"
   gettext-domain="com.github.watsonprojects.docs">
-    <key name="dark" type="b">
-      <default>false</default>
-      <summary>Dark Mode</summary>
-      <description>Sets dark mode status</description>
-    </key>
     <key name="tab" type="s">
       <default>"vala"</default>
       <summary>Last opened tab</summary>
