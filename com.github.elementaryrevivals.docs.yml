@@ -17,15 +17,33 @@ command: com.github.elementaryrevivals.docs
 # only need permission to draw our app on screen using either X11 or Wayland.
 finish-args:
   - '--share=ipc'
+  - '--share=network'
+  # Open GL rendering
+  - '--device=dri'
   - '--socket=fallback-x11'
   - '--socket=wayland'
     # Needed for perfers-color-scheme
   - '--system-talk-name=org.freedesktop.Accounts'
+  - '--metadata=X-DConf=migrate-path=/com/github/elementaryrevivals/docs/'
 
 # This section is where you list all the source code required to build your app.
 # If we had external dependencies that weren't included in our SDK, we would list
 # them here.
 modules:
+  - name: libdevhelp
+    buildsystem: meson
+    config-opts:
+      - '-Dflatpak_build=true'
+    sources:
+      - type: archive
+        url: https://gitlab.gnome.org/GNOME/devhelp/-/archive/3.34.0/devhelp-3.34.0.tar.gz
+        sha256: a3fbe7a7e40352d5aa72454fa5752e8616cb6636a7c38df9466384c186f03216
+    modules:
+      - name: amtk-5
+        sources:
+          - type: archive
+            url: https://download.gnome.org/sources/amtk/5.0/amtk-5.0.1.tar.xz
+            sha256: 2d1cf4a4468655f93c90a2dde2e08b1ea0b3960c0aee04eb206c201d7849de27
   - name: docs
     buildsystem: meson
     sources:
