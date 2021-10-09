@@ -1,4 +1,4 @@
-project('com.github.elementaryrevivals.docs', 'vala', 'c')
+project('com.github.watsonprojects.docs', 'vala', 'c')
 
 i18n = import('i18n')
 

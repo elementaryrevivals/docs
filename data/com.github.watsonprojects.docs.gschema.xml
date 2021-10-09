@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema path="/com/github/elementaryrevivals/docs/"
-  id="com.github.elementaryrevivals.docs"
-  gettext-domain="com.github.elementaryrevivals.docs">
+  <schema path="/com/github/watsonprojects/docs/"
+  id="com.github.watsonprojects.docs"
+  gettext-domain="com.github.watsonprojects.docs">
     <key name="dark" type="b">
       <default>false</default>
       <summary>Dark Mode</summary>

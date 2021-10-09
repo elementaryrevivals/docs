@@ -1,4 +1,4 @@
-data/com.github.elementaryrevivals.docs.appdata.xml.in
-data/com.github.elementaryrevivals.docs.desktop.in
+data/com.github.watsonprojects.docs.appdata.xml.in
+data/com.github.watsonprojects.docs.desktop.in
 src/MainWindow.vala
 src/Widgets/PackageList.vala

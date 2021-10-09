@@ -33,7 +33,7 @@ jobs:
         uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v3
         with:
           bundle: Docs.flatpak
-          manifest-path: com.github.elementaryrevivals.docs.yml
+          manifest-path: com.github.watsonprojects.docs.yml
           run-tests: true
           repository-name: appcenter
           repository-url: https://flatpak.elementary.io/repo.flatpakrepo

@@ -22,11 +22,11 @@
 public class Docs : Gtk.Application {
     public static GLib.Settings settings;
     static construct {
-        settings = new GLib.Settings ("com.github.elementaryrevivals.docs");
+        settings = new GLib.Settings ("com.github.watsonprojects.docs");
     }
 
     public Docs () {
-        Object (application_id: "com.github.elementaryrevivals.docs",
+        Object (application_id: "com.github.watsonprojects.docs",
         flags: ApplicationFlags.FLAGS_NONE);
     }
 

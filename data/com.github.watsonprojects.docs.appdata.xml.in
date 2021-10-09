@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2018 Matt Harris <matth281@outlook.com> -->
 <component type="desktop">
-  <id>com.github.elementaryrevivals.docs</id>
+  <id>com.github.watsonprojects.docs</id>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>Docs</name>
@@ -15,11 +15,11 @@
     </ul>
   </description>
   <provides>
-    <binary>com.github.elementaryrevivals.docs</binary>
+    <binary>com.github.watsonprojects.docs</binary>
   </provides>
   <developer_name>Matt Harris</developer_name>
-  <url type="homepage">https://github.com/elementaryrevivals/docs</url>
-  <url type="bugtracker">https://github.com/elementaryrevivals/docs/issues</url>
+  <url type="homepage">https://github.com/watsonprojects/docs</url>
+  <url type="bugtracker">https://github.com/watsonprojects/docs/issues</url>
   <releases>
     <release version="2.2.6" date="2019-05-28">
         <description>
@@ -208,16 +208,16 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementaryrevivals/docs/master/data/images/screenshot-1.png</image>
+      <image>https://raw.githubusercontent.com/watsonprojects/docs/master/data/images/screenshot-1.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementaryrevivals/docs/master/data/images/screenshot-2.png</image>
+      <image>https://raw.githubusercontent.com/watsonprojects/docs/master/data/images/screenshot-2.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementaryrevivals/docs/master/data/images/screenshot-3.png</image>
+      <image>https://raw.githubusercontent.com/watsonprojects/docs/master/data/images/screenshot-3.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementaryrevivals/docs/master/data/images/screenshot-4.png</image>
+      <image>https://raw.githubusercontent.com/watsonprojects/docs/master/data/images/screenshot-4.png</image>
     </screenshot>
   </screenshots>
   <custom>

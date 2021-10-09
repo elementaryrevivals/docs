@@ -24,7 +24,7 @@ public class MainWindow : Gtk.Window {
     Gtk.SearchBar search_bar;
     public MainWindow (Gtk.Application application) {
         Object (application: application,
-        icon_name: "com.github.elementaryrevivals.docs",
+        icon_name: "com.github.watsonprojects.docs",
         title: "Docs");
     }
 

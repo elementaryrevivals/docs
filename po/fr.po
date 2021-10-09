@@ -1,11 +1,11 @@
-# French translations for com.github.elementaryrevivals.docs package.
-# Copyright (C) 2019 THE com.github.elementaryrevivals.docs'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the com.github.elementaryrevivals.docs package.
+# French translations for com.github.watsonprojects.docs package.
+# Copyright (C) 2019 THE com.github.watsonprojects.docs'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.watsonprojects.docs package.
 # NathanBnm, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: com.github.elementaryrevivals.docs\n"
+"Project-Id-Version: com.github.watsonprojects.docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-29 21:15+0900\n"
 "PO-Revision-Date: 2019-01-18 16:23+0100\n"
@@ -16,38 +16,38 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/com.github.elementaryrevivals.docs.appdata.xml.in:7
-#: data/com.github.elementaryrevivals.docs.desktop.in:3
-#: data/com.github.elementaryrevivals.docs.desktop.in:4
+#: data/com.github.watsonprojects.docs.appdata.xml.in:7
+#: data/com.github.watsonprojects.docs.desktop.in:3
+#: data/com.github.watsonprojects.docs.desktop.in:4
 msgid "Docs"
 msgstr "Docs"
 
-#: data/com.github.elementaryrevivals.docs.appdata.xml.in:8
+#: data/com.github.watsonprojects.docs.appdata.xml.in:8
 msgid "Quickly Read Developer Docs"
 msgstr "Lisez rapidement la documentation des développeurs"
 
-#: data/com.github.elementaryrevivals.docs.appdata.xml.in:10
-#: data/com.github.elementaryrevivals.docs.desktop.in:5
+#: data/com.github.watsonprojects.docs.appdata.xml.in:10
+#: data/com.github.watsonprojects.docs.desktop.in:5
 msgid "A fast developer docs reader that supports Valadoc and DevDocs"
 msgstr "Un lecteur de documentation des dévelopeurs rapide qui supporte Valadoc et DevDocs"
 
-#: data/com.github.elementaryrevivals.docs.appdata.xml.in:11
+#: data/com.github.watsonprojects.docs.appdata.xml.in:11
 msgid "Includes:"
 msgstr "Inclut :"
 
-#: data/com.github.elementaryrevivals.docs.appdata.xml.in:13
+#: data/com.github.watsonprojects.docs.appdata.xml.in:13
 msgid "Offline support for both Valadoc and Devdocs"
 msgstr "Support hors-ligne pour Valadoc et Devdocs"
 
-#: data/com.github.elementaryrevivals.docs.appdata.xml.in:14
+#: data/com.github.watsonprojects.docs.appdata.xml.in:14
 msgid "Dark mode toggle to suit your workflow"
 msgstr "Thème sombre pour correspondre à votre à votre façon de travailler"
 
-#: data/com.github.elementaryrevivals.docs.desktop.in:8
-msgid "com.github.elementaryrevivals.docs"
-msgstr "com.github.elementaryrevivals.docs"
+#: data/com.github.watsonprojects.docs.desktop.in:8
+msgid "com.github.watsonprojects.docs"
+msgstr "com.github.watsonprojects.docs"
 
-#: data/com.github.elementaryrevivals.docs.desktop.in:12
+#: data/com.github.watsonprojects.docs.desktop.in:12
 msgid "docs;Docs;dev;"
 msgstr "docs;Docs;dev;"
 
