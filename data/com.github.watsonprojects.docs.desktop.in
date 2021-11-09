@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Docs
-GenericName=Docs
+GenericName=Documentation Reader
 Comment=A fast developer docs reader that supports Valadoc and DevDocs
 Categories=Development;Documentation;
 Exec=com.github.watsonprojects.docs
@@ -8,4 +8,4 @@ Icon=com.github.watsonprojects.docs
 Terminal=false
 Type=Application
 X-GNOME-Gettext-Domain=com.github.watsonprojects.docs
-Keywords=docs;Docs;dev;
+Keywords=docs;Docs;dev;Quick;vala;

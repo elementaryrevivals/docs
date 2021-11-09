@@ -11,16 +11,23 @@
     <p>Includes:</p>
     <ul>
       <li>Offline support for both Valadoc and Devdocs</li>
-      <li>Dark mode toggle to suit your workflow</li>
+      <li>Support for dark theme</li>
     </ul>
   </description>
   <provides>
     <binary>com.github.watsonprojects.docs</binary>
   </provides>
-  <developer_name>Matt Harris</developer_name>
+  <developer_name>Watson Projects</developer_name>
   <url type="homepage">https://github.com/watsonprojects/docs</url>
   <url type="bugtracker">https://github.com/watsonprojects/docs/issues</url>
   <releases>
+    <release version="3.0.0" data="2021-11-09">
+      <description>
+        <ul>
+          <li>First release as Docs</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.2.6" date="2019-05-28">
         <description>
           <ul>
@@ -208,50 +215,18 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/watsonprojects/docs/master/data/images/screenshot-1.png</image>
+      <image>https://raw.githubusercontent.com/watsonprojects/docs/main/data/images/screenshot-1.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/watsonprojects/docs/master/data/images/screenshot-2.png</image>
+      <image>https://raw.githubusercontent.com/watsonprojects/docs/main/data/images/screenshot-2.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/watsonprojects/docs/master/data/images/screenshot-3.png</image>
+      <image>https://raw.githubusercontent.com/watsonprojects/docs/main/data/images/screenshot-3.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/watsonprojects/docs/master/data/images/screenshot-4.png</image>
+      <image>https://raw.githubusercontent.com/watsonprojects/docs/main/data/images/screenshot-4.png</image>
     </screenshot>
   </screenshots>
-  <custom>
-    <value key="x-appcenter-color-primary">#4c158a</value>
-    <value key="x-appcenter-color-primary-text">rgb(255, 255, 255)</value>
-    <value key="x-appcenter-suggested-price">2</value>
-  </custom>
   <content_rating type="oars-1.1">
-    <content_attribute id="violence-cartoon">none</content_attribute>
-    <content_attribute id="violence-fantasy">none</content_attribute>
-    <content_attribute id="violence-realistic">none</content_attribute>
-    <content_attribute id="violence-bloodshed">none</content_attribute>
-    <content_attribute id="violence-sexual">none</content_attribute>
-    <content_attribute id="violence-desecration">none</content_attribute>
-    <content_attribute id="violence-slavery">none</content_attribute>
-    <content_attribute id="violence-worship">none</content_attribute>
-    <content_attribute id="drugs-alcohol">none</content_attribute>
-    <content_attribute id="drugs-narcotics">none</content_attribute>
-    <content_attribute id="drugs-tobacco">none</content_attribute>
-    <content_attribute id="sex-nudity">none</content_attribute>
-    <content_attribute id="sex-themes">none</content_attribute>
-    <content_attribute id="sex-homosexuality">none</content_attribute>
-    <content_attribute id="sex-prostitution">none</content_attribute>
-    <content_attribute id="sex-adultery">none</content_attribute>
-    <content_attribute id="sex-appearance">none</content_attribute>
-    <content_attribute id="language-profanity">none</content_attribute>
-    <content_attribute id="language-humor">none</content_attribute>
-    <content_attribute id="language-discrimination">none</content_attribute>
-    <content_attribute id="social-chat">none</content_attribute>
-    <content_attribute id="social-info">none</content_attribute>
-    <content_attribute id="social-audio">none</content_attribute>
-    <content_attribute id="social-location">none</content_attribute>
-    <content_attribute id="social-contacts">none</content_attribute>
-    <content_attribute id="money-purchasing">none</content_attribute>
-    <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
 </component>

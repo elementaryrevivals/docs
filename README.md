@@ -1,10 +1,10 @@
 
 # Docs
-<!-- ![Icon](https://github.com/watsonprojects/docs/raw/master/data/icons/64/com.github.watsonprojects.docs.svg) -->
+![Icon](https://github.com/watsonprojects/docs/raw/main/data/icons/64/com.github.watsonprojects.docs.svg)
 
 A fast developer docs reader
-![Screenshot](https://raw.githubusercontent.com/watsonprojects/docs/master/data/images/screenshot-1.png)
-![Screenshot](https://raw.githubusercontent.com/watsonprojects/docs/master/data/images/screenshot-4.png)
+![Screenshot](https://raw.githubusercontent.com/watsonprojects/docs/main/data/images/screenshot-1.png)
+![Screenshot](https://raw.githubusercontent.com/watsonprojects/docs/main/data/images/screenshot-4.png)
 
 ## Doc Sources:
  - Valadoc
@@ -42,4 +42,9 @@ cd build
 sudo ninja install && com.github.elementary-revivals.docs
 # To debug
 sudo ninja install && G_MESSAGES_DEBUG=all com.github.elementary-revivals.docs
+```
+
+To generate the flatpak package:
+```
+flatpak-builder build com.github.watsonprojects.docs.yml --user --install --force-clean
 ```

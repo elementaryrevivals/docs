@@ -22,8 +22,6 @@ finish-args:
   - '--device=dri'
   - '--socket=fallback-x11'
   - '--socket=wayland'
-    # Needed for perfers-color-scheme
-  - '--system-talk-name=org.freedesktop.Accounts'
   - '--metadata=X-DConf=migrate-path=/com/github/watsonprojects/docs/'
 
 # This section is where you list all the source code required to build your app.
