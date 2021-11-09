@@ -39,6 +39,7 @@ git clone https://github.com/watsonprojects/docs.git
 cd ./docs/
 meson build --prefix=/usr
 cd build
-ninja
-sudo ninja install
+sudo ninja install && com.github.elementary-revivals.docs
+# To debug
+sudo ninja install && G_MESSAGES_DEBUG=all com.github.elementary-revivals.docs
 ```

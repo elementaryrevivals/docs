@@ -17,11 +17,14 @@
  * Boston, MA 02110-1301 USA
  *
  * Authored by: Matt Harris <matth281@outlook.com>
+ *              Allie Law <allie@cloverleaf.app>
  */
 
 public class MainWindow : Gtk.Window {
     Gtk.Stack stack;
     Gtk.SearchBar search_bar;
+    private bool online;
+    private View dev;
     public MainWindow (Gtk.Application application) {
         Object (application: application,
         icon_name: "com.github.watsonprojects.docs",
@@ -62,7 +65,7 @@ public class MainWindow : Gtk.Window {
 
         var vala = new View ();
 
-        var online = check_online ();
+        online = check_online ();
         if (online) {
             vala.load_uri (Docs.settings.get_string ("last-vala"));
             stack.add_titled (vala, "vala", "Valadoc");
@@ -83,7 +86,7 @@ public class MainWindow : Gtk.Window {
             stack.add_titled (pane, "vala", "Valadoc");
         }
 
-        var dev = new View ();
+        dev = new View ();
         dev.set_cookies ();
         dev.appcache_init (online);
         dev.load_uri (Docs.settings.get_string ("last-dev"));
@@ -108,20 +111,6 @@ public class MainWindow : Gtk.Window {
             }
         });
 
-        var current_icons = Gtk.IconTheme.get_default ();
-        string icon_name = "object-inverse-symbolic";
-        if (current_icons.lookup_icon (icon_name, 16, Gtk.IconLookupFlags.FORCE_SIZE) == null) {
-            icon_name = "weather-few-clouds-symbolic";
-        }
-        var gtk_settings = Gtk.Settings.get_default ();
-        var theme_switch = new Granite.ModeSwitch.from_icon_name ("display-brightness-symbolic", "weather-clear-night-symbolic");
-        theme_switch.active = Docs.settings.get_boolean ("dark");
-        theme_switch.row_homogeneous = true;
-        theme_switch.bind_property ("active", gtk_settings, "gtk_application_prefer_dark_theme");
-
-        theme_switch.notify["active"].connect (()=> {
-            toggle_theme (dev, online, gtk_settings);
-        });
         var offline_popover = new PackageList ();
 
         var offline_button = new Gtk.MenuButton ();
@@ -133,7 +122,6 @@ public class MainWindow : Gtk.Window {
 
         header.add (back);
         header.add (forward);
-        header.pack_end (theme_switch);
         header.pack_end (offline_button);
 
         search_bar = create_search_bar ();
@@ -143,7 +131,6 @@ public class MainWindow : Gtk.Window {
         vbox.pack_start (search_bar, false, true, 0);
 
         add (vbox);
-        init_theme ();
 
         string style = "@define-color colorPrimary #403757;";
         var provider = new Gtk.CssProvider ();
@@ -155,12 +142,11 @@ public class MainWindow : Gtk.Window {
         }
 
         stack.notify["visible-child"].connect (() => {
-            stack_change (provider, theme_switch, offline_button);
+            stack_change (provider, offline_button);
         });
 
         show_all ();
 
-        theme_switch.set_visible (false);
         set_tab ();
 
         this.delete_event.connect (() => {
@@ -273,51 +259,21 @@ public class MainWindow : Gtk.Window {
         }
     }
 
-    private void stack_change (Gtk.CssProvider provider, Granite.ModeSwitch theme_switch, Gtk.Button offline_button) {
+    private void stack_change (Gtk.CssProvider provider, Gtk.Button offline_button) {
         if (stack.get_visible_child_name () == "vala") {
-            Gtk.Settings.get_default ().set ("gtk-application-prefer-dark-theme", true);
             Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
-            theme_switch.set_visible (false);
             offline_button.set_visible (true);
         } else {
             Gtk.StyleContext.remove_provider_for_screen (Gdk.Screen.get_default (), provider);
-            init_theme ();
 
-            theme_switch.set_visible (true);
             offline_button.set_visible (false);
         }
     }
 
-    private void init_theme () {
-        var window_settings = Gtk.Settings.get_default ();
-        var dark = Docs.settings.get_boolean ("dark");
-
-        if (dark) {
-            window_settings.set ("gtk-application-prefer-dark-theme", true);
-        } else {
-            window_settings.set ("gtk-application-prefer-dark-theme", false);
-        }
-    }
 
     private void set_tab () {
         var tab = Docs.settings.get_string ("tab");
         stack.set_visible_child_name (tab);
-    }
-
-    private void toggle_theme (View view, bool online, Gtk.Settings gtk_settings) {
-        if (!gtk_settings.gtk_application_prefer_dark_theme) {
-            view.run_javascript.begin ("document.cookie = 'dark=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';", null);
-            Docs.settings.set_boolean ("dark", false);
-            view.get_settings ().enable_offline_web_application_cache = true;
-            view.reload_bypass_cache ();
-        } else {
-            view.run_javascript.begin ("document.cookie = 'dark=1; expires=01 Jan 2100 00:00:00 UTC';", null);
-            Docs.settings.set_boolean ("dark", true);
-            if (online) {
-                view.get_settings ().enable_offline_web_application_cache = false;
-            }
-            view.reload_bypass_cache ();
-        }
     }
 }

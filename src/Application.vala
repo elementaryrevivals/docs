@@ -17,6 +17,7 @@
  * Boston, MA 02110-1301 USA
  *
  * Authored by: Matt Harris <matth281@outlook.com>
+ *              Allie Law <allie@cloverleaf.app>
  */
 
 public class Docs : Gtk.Application {
@@ -54,6 +55,19 @@ public class Docs : Gtk.Application {
         set_accels_for_action ("app.find", {"<Control>F"});
 
         search_action.activate.connect (window.toggle_search);
+
+        // First we get the default instances for Granite.Settings and Gtk.Settings
+        var granite_settings = Granite.Settings.get_default ();
+        var gtk_settings = Gtk.Settings.get_default ();
+
+        // Then, we check if the user's preference is for the dark style and set it if it is
+        gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+
+        // Finally, we listen to changes in Granite.Settings and update our app if the user changes their preference
+        granite_settings.notify["prefers-color-scheme"].connect (() => {
+            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+            //  No need to update devdocs, it is set to follow the system theme
+        });
     }
 
     public static int main (string[] args) {

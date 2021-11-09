@@ -34,8 +34,7 @@ public class View : WebKit.WebView {
     }
 
     public void appcache_init (bool online) {
-        var dark = Docs.settings.get_int ("dark");
-        if (dark == 1 && online) {
+        if (online) {
             get_settings ().enable_offline_web_application_cache = false;
         }
     }
