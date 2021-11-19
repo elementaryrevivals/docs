@@ -1,58 +1,228 @@
-# Uighur translations for com.github.watsonprojects.docs package.
-# Copyright (C) 2018 THE com.github.watsonprojects.docs'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the com.github.watsonprojects.docs package.
+# Uighur translations for com.github.watsonprojects.easydocs package.
+# Copyright (C) 2018 THE com.github.watsonprojects.easydocs'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.watsonprojects.easydocs package.
 # Automatically generated, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: com.github.watsonprojects.docs\n"
+"Project-Id-Version: com.github.watsonprojects.easydocs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-14 15:05+0100\n"
+"POT-Creation-Date: 2021-11-19 20:14+0000\n"
 "PO-Revision-Date: 2018-05-20 11:51+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/com.github.watsonprojects.docs.appdata.xml.in:7
-#: data/com.github.watsonprojects.docs.desktop.in:3
-#: data/com.github.watsonprojects.docs.desktop.in:4
-msgid "Docs"
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:7
+#: data/com.github.watsonprojects.easydocs.desktop.in:3
+msgid "EasyDocs"
 msgstr ""
 
-#: data/com.github.watsonprojects.docs.appdata.xml.in:8
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:8
 msgid "Quickly Read Developer Docs"
 msgstr ""
 
-#: data/com.github.watsonprojects.docs.appdata.xml.in:10
-#: data/com.github.watsonprojects.docs.desktop.in:5
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:10
+#: data/com.github.watsonprojects.easydocs.desktop.in:5
 msgid "A fast developer docs reader that supports Valadoc and DevDocs"
 msgstr ""
 
-#: data/com.github.watsonprojects.docs.appdata.xml.in:11
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:11
 msgid "Includes:"
 msgstr ""
 
-#: data/com.github.watsonprojects.docs.appdata.xml.in:13
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:13
 msgid "Offline support for both Valadoc and Devdocs"
 msgstr ""
 
-#: data/com.github.watsonprojects.docs.appdata.xml.in:14
-msgid "Dark mode toggle to suit your workflow"
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:14
+msgid "Support for dark theme"
 msgstr ""
 
-#: data/com.github.watsonprojects.docs.desktop.in:8
-msgid "com.github.watsonprojects.docs"
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:20
+msgid "Watson Projects"
 msgstr ""
 
-#: data/com.github.watsonprojects.docs.desktop.in:12
-msgid "docs;Docs;dev;"
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:27
+msgid "First release as EasyDocs"
 msgstr ""
 
-#: src/MainWindow.vala:131
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:34
+msgid "Added a 'find in page' searchbar"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:41
+msgid "Added French translations"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:42
+msgid "Minor bugfixes"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:49
+msgid "Package list bugfixes"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:56
+msgid "Added Chinese translations"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:63
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:72
+msgid "Fix some bugs with the offline package list"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:64
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:73
+msgid ""
+"Add an 'install all' button and alphabetical ordering to the offline package "
+"list"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:65
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:74
+msgid "Updated theme changer to use the new Granite ModeSwitch"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:81
+msgid "Juno AppCenter release"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:88
+msgid "Offline packages can now be easily searched through"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:95
+msgid "Fix a bug in opening some links"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:102
+msgid "Loki bugfixes"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:109
+msgid "Flatpak-friendly tweaks"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:116
+msgid "Better offline sidebar resizing"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:117
+msgid "Support for translations"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:118
+msgid "GNOME-friendly icons"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:119
+msgid "Misc patches"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:126
+msgid ""
+"Fixes offline DevDocs support - toggling the theme back and forth once "
+"should reload the cache"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:132
+msgid "Major update:"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:134
+msgid "Brand new UI for downloading offline docs natively"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:135
+msgid "Brand new offline docs UI that allows for searching and easier viewing"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:142
+msgid "Simplify UI"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:149
+msgid "UI Updates"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:156
+msgid "Added the ability to use Valadoc offline"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:163
+msgid "Docs now restores the last page you were on"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:170
+msgid "Docs now remembers its last size and location!"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:177
+msgid "Fixed a bug where DevDocs wouldn't work offline"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:184
+msgid "Minor UI tweaks"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:191
+msgid "New keyboard shortcut! Press ctrl+tab to switch tabs"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:197
+msgid "1.1.0"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:199
+msgid "New dark mode support!"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:200
+msgid "Docs remembers which tab you were last using"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:206
+msgid "Initial Release"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:208
+msgid "Support for Valadoc"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:209
+msgid "Support for DevDocs"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:210
+msgid "New Icon!"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.appdata.xml.in:211
+msgid "Fix some AppCenter issues"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.desktop.in:4
+msgid "Documentation Reader"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.desktop.in:8
+msgid "com.github.watsonprojects.easydocs"
+msgstr ""
+
+#: data/com.github.watsonprojects.easydocs.desktop.in:12
+msgid "easydocs;docs;dev;quick;vala;"
+msgstr ""
+
+#: src/MainWindow.vala:121
 msgid "Download offline documentation"
+msgstr ""
+
+#: src/MainWindow.vala:201
+msgid "Find in page…"
 msgstr ""
 
 #: src/Widgets/PackageList.vala:32

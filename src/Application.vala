@@ -20,14 +20,14 @@
  *              Allie Law <allie@cloverleaf.app>
  */
 
-public class Docs : Gtk.Application {
+public class EasyDocs : Gtk.Application {
     public static GLib.Settings settings;
     static construct {
-        settings = new GLib.Settings ("com.github.watsonprojects.docs");
+        settings = new GLib.Settings ("com.github.watsonprojects.easydocs");
     }
 
-    public Docs () {
-        Object (application_id: "com.github.watsonprojects.docs",
+    public EasyDocs () {
+        Object (application_id: "com.github.watsonprojects.easydocs",
         flags: ApplicationFlags.FLAGS_NONE);
     }
 
@@ -71,7 +71,7 @@ public class Docs : Gtk.Application {
     }
 
     public static int main (string[] args) {
-        var app = new Docs ();
+        var app = new EasyDocs ();
         return app.run (args);
     }
 }

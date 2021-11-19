@@ -1,5 +1,5 @@
 # This is the same ID that you've used in meson.build and other files
-app-id: com.github.watsonprojects.docs
+app-id: com.github.watsonprojects.easydocs
 
 # Instead of manually specifying a long list of build and runtime dependencies,
 # we can use a convenient pre-made runtime and SDK. For this example, we'll be
@@ -10,7 +10,7 @@ sdk: io.elementary.Sdk
 
 # This should match the exec line in your .desktop file and usually is the same
 # as your app ID
-command: com.github.watsonprojects.docs
+command: com.github.watsonprojects.easydocs
 
 # Here we can specify the kinds of permissions our app needs to run. Since we're
 # not using hardware like webcams, making sound, or reading external files, we
@@ -22,7 +22,7 @@ finish-args:
   - '--device=dri'
   - '--socket=fallback-x11'
   - '--socket=wayland'
-  - '--metadata=X-DConf=migrate-path=/com/github/watsonprojects/docs/'
+  - '--metadata=X-DConf=migrate-path=/com/github/watsonprojects/easydocs/'
 
 # This section is where you list all the source code required to build your app.
 # If we had external dependencies that weren't included in our SDK, we would list
@@ -42,7 +42,7 @@ modules:
           - type: archive
             url: https://download.gnome.org/sources/amtk/5.0/amtk-5.0.1.tar.xz
             sha256: 2d1cf4a4468655f93c90a2dde2e08b1ea0b3960c0aee04eb206c201d7849de27
-  - name: docs
+  - name: EasyDocs
     buildsystem: meson
     sources:
       - type: dir

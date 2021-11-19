@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=EasyDocs
+GenericName=Documentation Reader
+Comment=A fast developer docs reader that supports Valadoc and DevDocs
+Categories=Development;Documentation;
+Exec=com.github.watsonprojects.easydocs
+Icon=com.github.watsonprojects.easydocs
+Terminal=false
+Type=Application
+X-GNOME-Gettext-Domain=com.github.watsonprojects.easydocs
+Keywords=easydocs;docs;dev;quick;vala;

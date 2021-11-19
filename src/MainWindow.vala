@@ -27,8 +27,8 @@ public class MainWindow : Gtk.Window {
     private View dev;
     public MainWindow (Gtk.Application application) {
         Object (application: application,
-        icon_name: "com.github.watsonprojects.docs",
-        title: "Docs");
+        icon_name: "com.github.watsonprojects.easydocs",
+        title: "EasyDocs");
     }
 
     construct {
@@ -45,18 +45,18 @@ public class MainWindow : Gtk.Window {
         stack = new Gtk.Stack ();
         stack.set_transition_type (Gtk.StackTransitionType.SLIDE_LEFT_RIGHT);
 
-        var window_width = Docs.settings.get_int ("width");
-        var window_height = Docs.settings.get_int ("height");
+        var window_width = EasyDocs.settings.get_int ("width");
+        var window_height = EasyDocs.settings.get_int ("height");
         set_default_size (window_width, window_height);
-        var x = Docs.settings.get_int ("window-x");
-        var y = Docs.settings.get_int ("window-y");
+        var x = EasyDocs.settings.get_int ("window-x");
+        var y = EasyDocs.settings.get_int ("window-y");
 
         if (x != -1 || y != -1) {
             move (x, y);
         }
 
         this.destroy.connect (() => {
-            Docs.settings.set_string ("tab", stack.get_visible_child_name ());
+            EasyDocs.settings.set_string ("tab", stack.get_visible_child_name ());
         });
 
         var stack_switcher = new Gtk.StackSwitcher ();
@@ -67,7 +67,7 @@ public class MainWindow : Gtk.Window {
 
         online = check_online ();
         if (online) {
-            vala.load_uri (Docs.settings.get_string ("last-vala"));
+            vala.load_uri (EasyDocs.settings.get_string ("last-vala"));
             stack.add_titled (vala, "vala", "Valadoc");
         } else {
             var manager = new Dh.BookManager ();
@@ -89,7 +89,7 @@ public class MainWindow : Gtk.Window {
         dev = new View ();
         dev.set_cookies ();
         dev.appcache_init (online);
-        dev.load_uri (Docs.settings.get_string ("last-dev"));
+        dev.load_uri (EasyDocs.settings.get_string ("last-dev"));
 
         stack.add_titled (dev, "dev", "DevDocs");
 
@@ -154,17 +154,17 @@ public class MainWindow : Gtk.Window {
             get_position (out current_x, out current_y);
             get_size (out width, out height);
 
-            Docs.settings.set_int ("window-x", current_x);
-            Docs.settings.set_int ("window-y", current_y);
-            Docs.settings.set_int ("width", width);
-            Docs.settings.set_int ("height", height);
+            EasyDocs.settings.set_int ("window-x", current_x);
+            EasyDocs.settings.set_int ("window-y", current_y);
+            EasyDocs.settings.set_int ("width", width);
+            EasyDocs.settings.set_int ("height", height);
 
             if (dev.uri.contains ("devdocs.io")) {
-                Docs.settings.set_string ("last-dev", dev.uri);
+                EasyDocs.settings.set_string ("last-dev", dev.uri);
             }
 
             if (online && vala.uri.contains ("valadoc.org")) {
-                Docs.settings.set_string ("last-vala", vala.uri);
+                EasyDocs.settings.set_string ("last-vala", vala.uri);
             }
 
             return false;
@@ -273,7 +273,7 @@ public class MainWindow : Gtk.Window {
 
 
     private void set_tab () {
-        var tab = Docs.settings.get_string ("tab");
+        var tab = EasyDocs.settings.get_string ("tab");
         stack.set_visible_child_name (tab);
     }
 }

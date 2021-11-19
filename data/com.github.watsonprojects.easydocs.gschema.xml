@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema path="/com/github/watsonprojects/docs/"
-  id="com.github.watsonprojects.docs"
-  gettext-domain="com.github.watsonprojects.docs">
+  <schema path="/com/github/watsonprojects/easydocs/"
+  id="com.github.watsonprojects.easydocs"
+  gettext-domain="com.github.watsonprojects.easydocs">
     <key name="tab" type="s">
       <default>"vala"</default>
       <summary>Last opened tab</summary>

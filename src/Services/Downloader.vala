@@ -135,7 +135,7 @@ namespace Downloader {
     }
 
     public void toggled (Gtk.Button button, string name) {
-        string [] installed = Docs.settings.get_strv ("packages");
+        string [] installed = EasyDocs.settings.get_strv ("packages");
         var installed_list = new Gee.ArrayList<string> ();
         installed_list.add_all_array (installed);
 
@@ -147,7 +147,7 @@ namespace Downloader {
             installed_list.remove (name);
             string[] packages = installed_list.to_array ();
             packages += null;
-            Docs.settings.set_strv ("packages", packages);
+            EasyDocs.settings.set_strv ("packages", packages);
         } else {
             download (name);
             decompress (name);
@@ -159,7 +159,7 @@ namespace Downloader {
             installed_list.add (name);
             string[] packages = installed_list.to_array ();
             packages += null;
-            Docs.settings.set_strv ("packages", packages);
+            EasyDocs.settings.set_strv ("packages", packages);
         }
     }
 

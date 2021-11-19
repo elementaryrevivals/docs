@@ -1,4 +1,4 @@
-data/com.github.watsonprojects.docs.appdata.xml.in
-data/com.github.watsonprojects.docs.desktop.in
+data/com.github.watsonprojects.easydocs.appdata.xml.in
+data/com.github.watsonprojects.easydocs.desktop.in
 src/MainWindow.vala
 src/Widgets/PackageList.vala

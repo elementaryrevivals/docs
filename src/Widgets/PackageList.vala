@@ -24,7 +24,7 @@ public class PackageList : Gtk.Popover {
     private Gtk.ListBox package_list;
     public PackageList () {
         var constants = new Constants ();
-        var installed = Docs.settings.get_strv ("packages");
+        var installed = EasyDocs.settings.get_strv ("packages");
         var installed_list = new Gee.ArrayList<string> ();
         installed_list.add_all_array (installed);
         installed_list.sort ();
@@ -42,7 +42,7 @@ public class PackageList : Gtk.Popover {
                 }
             }
 
-            Docs.settings.set_strv ("packages", installed);
+            EasyDocs.settings.set_strv ("packages", installed);
             install_all.sensitive = false;
         });
 

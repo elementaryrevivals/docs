@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2018 Matt Harris <matth281@outlook.com> -->
 <component type="desktop">
-  <id>com.github.watsonprojects.docs</id>
+  <id>com.github.watsonprojects.easydocs</id>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-3.0+</project_license>
-  <name>Docs</name>
+  <name>EasyDocs</name>
   <summary>Quickly Read Developer Docs</summary>
   <description>
     <p>A fast developer docs reader that supports Valadoc and DevDocs</p>
@@ -15,16 +15,21 @@
     </ul>
   </description>
   <provides>
-    <binary>com.github.watsonprojects.docs</binary>
+    <binary>com.github.watsonprojects.easydocs</binary>
   </provides>
   <developer_name>Watson Projects</developer_name>
-  <url type="homepage">https://github.com/watsonprojects/docs</url>
-  <url type="bugtracker">https://github.com/watsonprojects/docs/issues</url>
+  <url type="homepage">https://github.com/watsonprojects/easydocs</url>
+  <url type="bugtracker">https://github.com/watsonprojects/easydocs/issues</url>
   <releases>
-    <release version="3.0.0" data="2021-11-09">
+    <release version="3.0.1" date="2021-11-26">
+      <description>
+        <p>Minor changes in app packaging</p>
+      </description>
+    </release>
+    <release version="3.0.0" date="2021-11-09">
       <description>
         <ul>
-          <li>First release as Docs</li>
+          <li>First release as EasyDocs</li>
         </ul>
       </description>
     </release>

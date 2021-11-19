@@ -40,8 +40,8 @@ public class View : WebKit.WebView {
     }
 
     public void set_cookies () {
-        string path = Path.build_filename (Environment.get_user_config_dir (), "com.github.watsonprojects.docs", "cookies");
-        string folder = Path.build_filename (Environment.get_user_config_dir (), "com.github.watsonprojects.docs");
+        string path = Path.build_filename (Environment.get_user_config_dir (), "com.github.watsonprojects.easydocs", "cookies");
+        string folder = Path.build_filename (Environment.get_user_config_dir (), "com.github.watsonprojects.easydocs");
 
         if (!GLib.FileUtils.test (folder, GLib.FileTest.IS_DIR)) {
             var file = File.new_for_path (folder);
